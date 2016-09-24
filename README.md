@@ -1,0 +1,1 @@
+# KanColle-aircraft-allocation
