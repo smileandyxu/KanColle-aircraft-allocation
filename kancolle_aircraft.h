@@ -20,6 +20,7 @@ public:
     aircraft(): Name(""), AA(0.0), EFG(0.0), Bombing(0.0), Torpedo(0.0) {}
     aircraft(const aircraft &x): Name(x.Name), AA(x.AA), EFG(x.EFG), Bombing(x.Bombing), Torpedo(x.Torpedo) {}
     aircraft(const std::string n, const int a, const int b, const int c, const int d): Name(n), AA(a), EFG(b), Bombing(c), Torpedo(d) {}
+    aircraft(const std::string n, const double a, const double b, const double c, const double d): Name(n), AA(a), EFG(b), Bombing(c), Torpedo(d) {}
     ~aircraft() {}
 
     inline bool same(const aircraft &) const;
