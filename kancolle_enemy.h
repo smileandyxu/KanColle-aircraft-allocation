@@ -11,6 +11,10 @@
 class enemy {
 public:
     enemy(): Name(""), Fire(0.0), Armor(0.0), Health(0.0), Torpedo(0.0), Anti-air(0.0) {}
+    enemy(const enemy &x): Name(x.Name), Fire(x.Fire), Armor(x.Armor), Health(x.Health), Torpedo(x.Torpedo), Anti_air(x.Anti_air) {}
+    enemy(const std::string n, const int a, const int b, const int c, const int d, const int e): Name(n), Fire(a). Armor(b), Health(c), Torpedo(d), Anti_air(e) {}
+    enemy(const std::string n, const double, const double b, const double c, const double d, const double e): Name(n), Fire(a). Armor(b), Health(c), Torpedo(d), Anti_air(e) {}
+    ~enemy() {}
 
 private:
     std::string Name;
